@@ -13,6 +13,10 @@ if [ ! -d ~/terraform/tp_init/ ]; then
 fi
 
 
+sudo apt-get install \
+	git \
+	vim
+
 echo "Downloading terraform binary ..."
 if [ ! -e terraform_0.14.7_linux_amd64.zip ]; then  
   curl -O https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_linux_amd64.zip
